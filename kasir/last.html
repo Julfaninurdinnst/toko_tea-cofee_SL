@@ -1,0 +1,148 @@
+<html>
+    <head>
+        <title>
+            selamat datang di website sindang laya's shop
+        </title>
+        <link rel="stylesheet" type="text/css" href="../css/reset.css">
+        <link rel="stylesheet" type="text/css" href="../kasir/last.css">
+        <style>
+
+  .tengah{
+            background-image:url(  keren-hd-texture-wallpapers-wood-background-kayu-keren-hd-wallpapers-for-free-download-doodle-background-kayu-keren-hd-wallpapers-wallpaper.jpg);
+            background-position:center;
+            width:auto;
+            height:auto;
+        }
+  table{
+   background: grey;
+   margin:auto;
+
+  }
+ </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+            	<img src="../img/logo.png" class="logo1">
+            	<img src="../img/logo1.png" class="logo2">
+                <h1 class="judul1">
+                    sindang laya's shop 
+                </h1> 
+                <h1 class="judul2">
+                    toko distributor tea & cofee 
+                </h1>
+            <ul>
+                <li><a href="../index.html">home</a></li>
+                <li><a href="../product/pageproduk.html">product</a></li>
+                <li><a href="../about us/aboutus.html">about us</a></li>
+                <li><a href="../contact/contact.html">contact</a></li>
+            </div>
+       
+            <div class="gambar">
+                <img src="../img/a.jpg">
+            </div>
+ 
+<body class="tengah">
+	<br><br><br>
+ <div>
+  
+  <table border="1">
+   <h2 align="center" style="background: salmon"><font size=20>transaksi penjualan produk</font></h2>	<br><br><br>
+   <tr>    
+    <th>Nama</th>
+    <th><select id="nama" onchange="total()" >
+    	<option>teh jawa</option>
+    	<option>teh hijau</option>
+    	<option>teh hitam</option>
+    	<option>teh merah</option>
+    	<option>kopi arabica</option>
+    	<option>kopi robusta</option>
+		<option>kopi madina</option>
+		<option>kopi aceh</option>
+		<option>kopi luak</option>
+
+
+
+    </select></th>
+   </tr>
+   
+   <tr>    
+    <th>Harga</th>
+    <th><input type="number"  id="harga" onchange="total()"></th>
+   </tr>
+
+   <tr>    
+    <th>Jumlah Beli</th>    
+    <th><input type="number" id="jumlah"  value="0" onchange="total()"></th>
+   </tr>
+   <tr>    
+    <th>kategori</th>
+    <th><select id="status" onchange="total()">
+   <option>Pcs</option>
+   <option>Pax</option>
+    </select></th>
+   </tr>
+   
+   <tr>    
+    <th>jumlah total</th>
+    <th><input type="text" style="background: white" id="total" disabled></th>
+   </tr>
+
+   <tr>    
+    <th>Pembayaran</th>    
+    <th><input type="number" id="bayar" onchange="total()"></th>
+   </tr>
+   
+   <tr>    
+    <th>Kembalian</th>
+    <th><input type="text" style="background: white" id="total1" disabled></th>
+   </tr>
+         
+            <tr>
+                <th><input type="button" style="background: white"  onclick="window.print()" value="CETAK"></th>
+            </tr>
+   
+   <tr>   
+    <table width="300" height="201px" border="8">
+    <th><label align="landscape"  id="cetak" ></label></th>
+    </table>
+   </tr>         
+  
+  </table> 
+  <br><br><br>
+        <marquee scrolldelay="100" direction="left" bgcolor="salmon"> > TERIMA KASIH TELAH MEMPERCAYAI KAMI< </marquee>
+   <br><br><br>
+  
+  <script type="text/javascript">
+  
+  function total() {
+   var nama = document.getElementById('nama').value;
+   var harga =  parseInt(document.getElementById('harga').value);
+   var jumlah_beli =  parseInt(document.getElementById('jumlah').value);
+   var pembayaran =  parseInt(document.getElementById('bayar').value);
+   var jenis = document.getElementById("status").value;
+   var jumlah_harga = harga * jumlah_beli;
+    document.getElementById('total').value = jumlah_harga;
+
+   var kembali = pembayaran - jumlah_harga;
+    document.getElementById('total1').value = kembali;
+  
+   var cetak = "Nama    : "+nama+"</br>"+
+                      "Harga   : "+harga+"</br>"+
+                      "Jumlah_beli  : "+jumlah_beli+"</br>"+
+                      "Kategori   : "+jenis+"</br>"+
+                      "Jumlah_total  : "+jumlah_harga+"</br>"+
+                      "pembayaran  : "+pembayaran+"</br>"+
+                      "Kembalian  : "+kembali;
+    document.getElementById("cetak").innerHTML=cetak;
+  }
+  
+  </script>
+ </div>
+ <div class="footer">
+                <p class="cr">
+                    @copyright 2020. julfani nurdin nasution,@JNN ch.
+                </p>
+            </div>
+</body>
+</html>

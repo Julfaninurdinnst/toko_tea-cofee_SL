@@ -1,0 +1,355 @@
+
+/*STYLE HOME*/
+body {
+        font-size: 15px;
+        font-family: arial;
+        background-image: url(img/c.png);
+        color: #acacac;
+    }
+ .container {
+    width: 900;
+    margin: auto;
+    background-color: #eee;
+    margin-top: 0;
+}
+
+.header .judul1{
+margin-left: 10px;
+padding-top: 20px;
+padding-left:10px;
+padding-bottom: 5px;
+font-size: 40px;
+color:darkblue;
+font-weight: bold;
+text-transform: uppercase;
+margin-bottom: 0px;
+text-align:center;
+}
+.header .judul2{
+margin-left: 10px;
+padding:5px;
+font-size: 25px;
+color:darkblue;
+font-style: italic;
+font-weight: bold;
+text-transform: uppercase;
+margin-top: 5px;
+text-align: center;
+}
+.header .logo1{
+    float:left;
+    height: 160px;
+    width: 160px;
+}
+.header .logo2{
+    float:right;
+    height: 140px;
+    width: 140px;
+    margin: 8px;
+    }
+.header ul li{
+    display: inline-block;
+    text-decoration: none;
+    text-align: left;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.header ul li a,.content .penulis a,.content .sidebar .artikel_lain ul li a{
+    text-decoration: none;
+    color: salmon;
+}
+.header a:hover,.content .penulis a:hover,.content .sidebar .artikel_lain ul li a:hover{
+    background-color: lightskyblue;
+    color: white;
+}
+.gambar img{
+    background-size: cover;
+    border-top: 5px solid darkblue;
+    border-bottom: 5px solid salmon;
+}
+.content{
+    margin: 15px;
+    font-family: arial;
+    width: 900px;
+}
+.sd{
+    font:bold 30px/40px Arial Narrow,arial;
+    color:#222;
+    text-transform: capitalize;
+    text-align: center;
+}
+.artikel {
+    width: 850px;
+    height: auto;
+    border-radius: 3px;
+    margin: 5px 5px 5px 5px;
+    border: 1px solid gainsboro;
+    box-sizing: border-box;
+    clear: both;
+}
+
+.artikel p {
+    padding: 5px 6px 5px 5px;
+    line-height: 1.5;  
+}
+.artikel .konten {
+    width: 23.5%;
+    height: auto;
+    margin: 5px 5px 5px 5px;
+    border-radius: 3px;
+    border: 1px solid gainsboro;
+    float: left;
+}
+
+.artikel .isi {
+    width: 98.5%;
+    height: auto;
+    margin: 5px 5px 5px 5px;
+    border-radius: 3px;
+    border: 1px solid gainsboro;
+    float: left;
+}
+.artikel .isi .judul {
+    font-size: xx-large;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.artikel .isi p {
+    margin-top: 0;
+}
+.artikel .isi img {
+    float: left;
+    margin: 5px 5px 5px 5px;
+}
+
+.artikel .konten img {
+    width: 95.8%;
+    height: 150px;
+    margin: 5px 5px 5px 5px;
+
+}
+.artikel .konten:hover {
+    opacity:0.9;
+
+}
+.artikel .konten .judul a {
+    margin-left: 5px;
+    text-decoration: none;
+    font-size:x-large;
+    color:#020101;
+}
+
+.artikel .konten a:hover {
+    opacity:0.9;
+}
+.footer{
+    text-align: center;
+    background-color: #333;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 40px;
+}
+.clear{
+	clear: both;
+}
+            /*STYLE PRODUK*/
+                .judul{
+                font: bold 30px/40px arial,sans-sarif;
+                text-transform: uppercase;
+                color:#000;
+            }
+                h3{
+                    font-size: 20px;
+                    margin:25;
+                    text-align: center;
+                    text-shadow: 1px 0 2px white;
+                    color:#000;
+                    text-transform: capitalize;
+                }
+                .teh{
+                    width: 800px;
+                    background-color: #aaa;
+                    margin: auto;
+                    padding: 30px;
+                    box-shadow: 0 0 5px 5px rgba(0,0,0,.5);
+                    border-radius: 10px;
+                    box-sizing: border-box;
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+                .teh_baris1 li{
+                    width: 130px;
+                    height:130px;
+                    border-radius: 50%;
+                    border: 5PX solid #555;
+                    overflow: hidden;
+                    float:left;
+                    position: relative;
+                    margin: 10px;
+                    margin-left: 30px;
+                }
+                .teh_baris1 li,
+                .teh_baris1 li img,
+                .teh_baris1 li span,
+                .teh_baris2 li,
+                .teh_baris2 li img,
+                .teh_baris2 li span{
+                    border-radius: 50%;
+                }
+                .teh_baris1 li img,
+                .teh_baris2 li img
+                {
+                    width: 130px;
+                    height: 130px;
+                }
+                .teh_baris1 li span
+                {
+                    display: block;
+                    width: 130px;
+                    height: 130px;
+                    background-color: rgba(200,200,200,.4);
+                    position: absolute;
+                    top:0;
+                    color: #000;
+                    text-shadow: 1px 1px 1px #aaa;
+                    font: bold 20px/25px arial,sans-serif;
+                    text-align: center;
+                    text-transform: capitalize;
+                    line-height: 120px;
+                    opacity:0;
+                    transform: scale(0) rotate(0);
+                    transition: 0.4;
+                }
+                .teh_baris1 li a:hover span,
+                .teh_baris2 li a:hover span
+                {
+                    opacity: 1;
+                    transform: scale(1) rotate(360deg);
+                }
+                .teh_baris2 li span {
+                     display: block;
+                    width: 130px;
+                    height: 130px;
+                    background-color: rgba(200,200,200,.4);
+                    position: absolute;
+                    top:0;
+                    color: #000;
+                    text-shadow: 1px 1px 1px #aaa;
+                    font: bold 20px/25px arial,sans-serif;
+                    text-align: center;
+                    text-transform: capitalize;
+                    line-height: 120px;
+                    opacity:0;
+                    transform: scale(0) rotate(0);
+                    transition: 0.4;
+                }.teh_baris2 li {
+                    width: 130px;
+                    height:130px;
+                    border-radius: 50%;
+                    border: 5PX solid #555;
+                    overflow: hidden;
+                    float:left;
+                    position: relative;
+                    margin: 10px;
+                }.kopi{
+                    width: 800px;
+                    background-color: #aaa;
+                    margin: auto;
+                    padding: 30px;
+                    box-shadow: 0 0 5px 5px rgba(0,0,0,.5);
+                    border-radius: 10px;
+                    box-sizing: border-box;
+                    text-align: center;
+                    margin: 20px;
+                }
+                .kopi_baris1 li{
+                    width: 130px;
+                    height:130px;
+                    border-radius: 50%;
+                    border: 5PX solid #555;
+                    overflow: hidden;
+                    float:right;
+                    position: relative;
+                    margin: 10px;
+                    margin-left: 30px;
+                    border-radius: 50%;
+                }
+                .kopi_baris1 li span
+                {
+                    display: block;
+                    width: 130px;
+                    height: 130px;
+                    background-color: rgba(200,200,200,.4);
+                    position: absolute;
+                    top:0;
+                    color: #000;
+                    text-shadow: 1px 1px 1px #aaa;
+                    font: bold 20px/25px arial,sans-serif;
+                    text-align: center;
+                    text-transform: capitalize;
+                    line-height: 120px;
+                    opacity:0;
+                    transform: scale(0) rotate(0);
+                    transition: 0.4;
+                    border-radius: 50%
+                }
+                .kopi_baris1 li a:hover span,
+                .kopi_baris2 li a:hover span
+                {
+                    opacity: 1;
+                    transform: scale(1) rotate(360deg);
+                }
+                .kopi_baris2 li span {
+                    display: block;
+                    width: 130px;
+                    height: 130px;
+                    background-color: rgba(200,200,200,.4);
+                    position: absolute;
+                    top:0;
+                    color: #000;
+                    text-shadow: 1px 1px 1px #aaa;
+                    font: bold 20px/25px arial,sans-serif;
+                    text-align: center;
+                    text-transform: capitalize;
+                    line-height: 120px;
+                    opacity:0;
+                    transform: scale(0) rotate(0);
+                    transition: .4;
+                    border-radius: 50%
+                }.kopi_baris2 li {
+                    width: 130px;
+                    height:130px;
+                    border-radius: 50%;
+                    border: 5PX solid #555;
+                    overflow: hidden;
+                    float:left;
+                    position: relative;
+                    margin: 10px;
+                    border-radius: 50%
+                    }
+                .konten1{
+                width: 100px;
+                height: 700px;
+                float: left;
+                background-color: #ddd;
+                margin:0;
+            } 
+            .konten2{
+                width: 770px;
+                height: 700px;
+                float: left;
+                background-color: #666;
+                margin:0;
+                text-align: center;
+            }
+            .konten2 img{
+                padding-bottom: 10px;
+                width: 130px;
+                height: 130px;
+            }
+
+
